@@ -369,10 +369,10 @@ body.dark {
   height: 120vh;
   /* display: none; */
 }
-.add{
-  display:flex ;
+.add {
+  display: flex;
 }
-.remove{
+.remove {
   display: none;
   animation-name: hide;
   animation-duration: 4s;
@@ -581,7 +581,7 @@ body.dark {
 
 @keyframes slide {
   from {
-    transition:all 2000s ease-in;
+    transition: all 2000s ease-in;
     /* transform: translateX(); */
   }
   to {
@@ -596,9 +596,8 @@ body.dark {
     width: 80%;
     transition: all 0.2s linear;
     overflow: scroll;
-    
   }
- 
+
   .content {
     margin-left: 0;
     width: 100%;
@@ -641,6 +640,10 @@ body.dark {
     display: block;
     font-size: 25px;
   }
+  ._cards-container {
+    padding: 0px;
+    padding-top: 5px;
+  }
   .card_section {
     justify-content: space-around;
     padding-top: 5px;
@@ -654,16 +657,20 @@ body.dark {
     display: flex;
     justify-content: center;
   }
+  .cards_holder {
+    width: 130px;
+    height: 130px;
+  }
+  ._card {
+    font-size: 0.9rem;
+  }
   .more {
     display: none;
   }
 }
-@media screen and (width:1024px) {
+@media screen and (width: 1024px) {
   .logo {
-    
     margin-bottom: 20px;
     margin-top: 10px;
-  
-    
   }
 }
