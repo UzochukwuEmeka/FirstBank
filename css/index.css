@@ -664,6 +664,9 @@ body.dark {
   ._card {
     font-size: 0.9rem;
   }
+  .card_title{
+    margin-top: 9px;
+  }
   .more {
     display: none;
   }

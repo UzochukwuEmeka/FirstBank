@@ -76,3 +76,5 @@ for (let i = 0; i < hiddenCards.length; i++) {
     HideAll.style.display = "none";
   });
 }
+
+
