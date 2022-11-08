@@ -55,7 +55,7 @@ body.dark {
 
 .logo {
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   margin-top: 20px;
 
   margin-left: 20px;
@@ -96,8 +96,9 @@ body.dark {
 .head_text {
   color: var(--white);
   -webkit-box-reflect: below 2px linear-gradient(transparent, #0004);
-  
-  line-height: 0.70em;
+  /* text-shadow: 0 0 10px var(--white), 0 0 20px var(--white), 0 0 40px var(--white),
+  0 0 80px var(--white), 0 0 100px var(--white);
+  line-height: 0.70em; */
   outline: none;
   animation: glow 8s infinite linear;
 }
@@ -231,6 +232,8 @@ body.dark {
 
 .seach-bar-container.dark {
   background: #282828;
+  
+  
 }
 .seach-bar-container {
   width: 100%;
@@ -248,6 +251,7 @@ body.dark {
 ._search-form.dark {
   background: #373737;
   color: var(--white);
+  
 }
 ._search-form.dark .search_input {
   color: var(--white);
