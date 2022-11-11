@@ -50,7 +50,6 @@ body.dark {
   background: var(--white);
   box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.25);
   transition: all 0.5s linear;
-  /* overflow: scroll; */
 }
 
 .logo {
@@ -93,27 +92,8 @@ body.dark {
 }
 .head_text {
   color: var(--white);
-  -webkit-box-reflect: below 2px linear-gradient(transparent, #0004);
-  /* text-shadow: 0 0 10px var(--white), 0 0 20px var(--white), 0 0 40px var(--white),
-  0 0 80px var(--white), 0 0 100px var(--white);
-  line-height: 0.70em; */
+
   outline: none;
-  animation: glow 8s infinite linear;
-}
-
-@keyframes glow {
-  0% {
-    /* color: #0e3742;
-    text-shadow: none; */
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
 }
 
 .nav-links .tablinks a {
@@ -141,51 +121,35 @@ body.dark {
   border-radius: 10px;
   transition: 0.5s;
 }
-/* .nav-links .tablinks:nth-child(1):hover ~ .actives {
-  top: 0%;
-} */
+
 .nav-links .tablinks:nth-child(1).active ~ .actives {
   top: 0%;
 }
-/* .nav-links .tablinks:nth-child(2):hover ~ .actives {
-  top: 11.1%;
-} */
+
 .nav-links .tablinks:nth-child(2).active ~ .actives {
   top: 11.1%;
 }
-/* .nav-links .tablinks:nth-child(3):hover ~ .actives {
-  top: 22.2%;
-} */
+
 .nav-links .tablinks:nth-child(3).active ~ .actives {
   top: 22.2%;
 }
-/* .nav-links .tablinks:nth-child(4):hover ~ .actives {
-  top: 33.3%;
-} */
+
 .nav-links .tablinks:nth-child(4).active ~ .actives {
   top: 33.3%;
 }
-/* .nav-links .tablinks:nth-child(5):hover ~ .actives {
-  top: 44.4%;
-} */
+
 .nav-links .tablinks:nth-child(5).active ~ .actives {
   top: 44.4%;
 }
-/* .nav-links .tablinks:nth-child(6):hover ~ .actives {
-  top: 55.5%;
-} */
+
 .nav-links .tablinks:nth-child(6).active ~ .actives {
   top: 55.5%;
 }
-/* .nav-links .tablinks:nth-child(7):hover ~ .actives {
-  top: 66.6%;
-} */
+
 .nav-links .tablinks:nth-child(7).active ~ .actives {
   top: 66.6%;
 }
-/* .nav-links .tablinks:nth-child(8):hover ~ .actives {
-  top: 77.7%;
-} */
+
 .nav-links .tablinks:nth-child(8).active ~ .actives {
   top: 77.7%;
 }
@@ -378,19 +342,10 @@ body.dark {
   align-items: center;
   position: relative;
 }
-/* .hero_text h1 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-  color: var(--white);
-  margin-bottom: 30px;
-  font-family: var(--font);
-} */
 
 /*  Cards*/
 .all_cards {
   height: 100%;
-  /* display: none; */
 }
 .add {
   display: grid;
@@ -473,7 +428,7 @@ body.dark {
   flex-direction: column;
   border-radius: 15px;
   overflow: hidden;
-  /* padding: 0.5rem; */
+
   color: var(--white);
   font-family: var(--font);
   font-size: 1rem;
@@ -604,7 +559,6 @@ body.dark {
 @keyframes slide {
   from {
     transition: all 0.1s ease-in;
-    /* transform: translateX(); */
   }
   to {
     transition: all 50000s ease-in-out;
