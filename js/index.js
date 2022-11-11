@@ -4,34 +4,14 @@ let added2 = document.querySelectorAll(".added2");
 let number = document.getElementById("_cardscount");
 let number2 = document.getElementById("_cardscount2");
 
-// function openCity(evt, cityName) {
-//   // Declare all variables
-//   var i, tabcontent, tablinks;
-
-// // Get all elements with class="tabcontent" and hide them
-// tabcontent = document.getElementsByClassName("tabcontent");
-// for (i = 0; i < tabcontent.length; i++) {
-//   tabcontent[i].style.display = "none";
-// }
-
-// Get all elements with class="tablinks" and remove the class "active"
 let tablinks = document.querySelectorAll(".tablinks");
-
 
 tablinks.forEach((tablink) => {
   tablink.addEventListener("click", function () {
     tablinks.forEach((btn) => btn.classList.remove("active"));
-    this.classList.add("active")
+    this.classList.add("active");
   });
 });
-
-// Show the current tab, and add an "active" class to the button that opened the tab
-//   document.getElementById(cityName).style.display = "block";
-//   evt.currentTarget.className += " active";
-
-// }
-// document.getElementById("defaultOpen").click();
-// // Changing UI Backgrond Color
 
 const checkbox = document.getElementById("checkbox");
 checkbox.addEventListener("change", () => {
@@ -72,30 +52,47 @@ let ShowAll = document.getElementById("Show_more");
 let heightChange = document.getElementById("all_cards");
 let hiddenCards = document.querySelectorAll(".addtional_cards");
 let HideAll = document.getElementById("Show_less");
-// console.log(number.textContent=0)
+
 for (let i = 0; i < hiddenCards.length; i++) {
   hiddenCards[i];
   console.log(hiddenCards.length);
   ShowAll.addEventListener("click", () => {
-    hiddenCards[i].classList.replace("remove", "add");
+   
+    hiddenCards[i].style.height = "100%";
 
     heightChange.style.height = 100 + "%";
     ShowAll.style.display = "none";
     HideAll.style.display = "block";
   });
   HideAll.addEventListener("click", () => {
-    hiddenCards[i].classList.replace("add", "remove");
-    heightChange.style.height = 120 + "vh";
+    hiddenCards[i].style.height = "80vh";
+  
     ShowAll.style.display = "block";
     HideAll.style.display = "none";
   });
 }
 
 for (let i = 0; i < added.length; i++) {
-  console.log(added[i].length);
-  console.log((number.textContent = added.length));
+  console.log(added[i].length );
+  console.log((number.textContent = added.length -8));
 }
 for (let i = 0; i < added2.length; i++) {
   console.log(added2[i].length);
   console.log((number2.textContent = added2.length));
+}
+
+function search() {
+  let filter = document.getElementById("search_input").value.toUpperCase();
+  let cards = document.querySelectorAll(".cards_container");
+  let view = document.querySelectorAll("._card-bottom-text");
+  for (let i = 0; i < view.length; i++) {
+    let a = cards[i].querySelectorAll("._card-bottom-text")[0];
+    let value = a.innerHTML || a.innerText || a.textContent;
+    if (value.toUpperCase().indexOf(filter) > -1) {
+      cards[i].style.display = " ";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+  console.log(filter);
 }

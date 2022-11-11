@@ -100,8 +100,9 @@
                                 class="search_input"
                                 id="search_input"
                                 placeholder="Search for a Process or Service"
+                                onkeyup="search()"
                             >
-                            <button class="btn-img">
+                            <button class="btn-img"  onclick="search()">
                                 <img src="image/search.png" alt="search">
                             </button>
                         </form>
@@ -117,161 +118,7 @@
                         <section class="_cards-section tabcontent" id="tab1">
                             <div class="container _cards-container">
                                 <div class="card_section">
-                                    <div class="cards_container">
-                                        <div class="cards_holder">
-                                            <div href="#" class="_card front d-flex ">
-                                                <div class="_card-image">
-                                                    <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
-                                                </div>
-                                               
-                                                <div class="_card_body"></div>
-                                                <div class="_card-bottom-text">Item 1</div>
-                                            </div>
-                                            <div href="#" class="_card back d-flex">
-                                                <div class="card_title">Item 1</div>
-                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                <a href="" class="_card-link">
-                                                    Read more
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cards_container">
-                                        <div class="cards_holder">
-                                            <div href="#" class="_card front d-flex ">
-                                                <div class="_card-image">
-                                                    <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
-                                                </div>
-                                              
-                                                <div class="_card_body"></div>
-                                                <div class="_card-bottom-text">Item 1</div>
-                                            </div>
-                                            <div href="#" class="_card back d-flex">
-                                                <div class="card_title">Item 1</div>
-                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                <a href="" class="_card-link">
-                                                    Read more
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cards_container">
-                                        <div class="cards_holder">
-                                            <div href="#" class="_card front d-flex ">
-                                                <div class="_card-image">
-                                                    <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="_card_body"></div>
-                                                <div class="_card-bottom-text">Item 1</div>
-                                            </div>
-                                            <div href="#" class="_card back d-flex">
-                                                <div class="card_title">Item 1</div>
-                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                <a href="" class="_card-link">
-                                                    Read more
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cards_container">
-                                        <div class="cards_holder">
-                                            <div href="#" class="_card front d-flex ">
-                                                <div class="_card-image">
-                                                    <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="_card_body"></div>
-                                                <div class="_card-bottom-text">Item 1</div>
-                                            </div>
-                                            <div href="#" class="_card back d-flex">
-                                                <div class="card_title">Item 1</div>
-                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                <a href="" class="_card-link">
-                                                    Read more
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cards_container">
-                                        <div class="cards_holder">
-                                            <div href="#" class="_card front d-flex ">
-                                                <div class="_card-image">
-                                                    <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="_card_body"></div>
-                                                <div class="_card-bottom-text">Item 1</div>
-                                            </div>
-                                            <div href="#" class="_card back d-flex">
-                                                <div class="card_title">Item 1</div>
-                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                <a href="" class="_card-link">
-                                                    Read more
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cards_container">
-                                        <div class="cards_holder">
-                                            <div href="#" class="_card front d-flex ">
-                                                <div class="_card-image">
-                                                    <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="_card_body"></div>
-                                                <div class="_card-bottom-text">Item 1</div>
-                                            </div>
-                                            <div href="#" class="_card back d-flex">
-                                                <div class="card_title">Item 1</div>
-                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                <a href="" class="_card-link">
-                                                    Read more
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cards_container">
-                                        <div class="cards_holder">
-                                            <div href="#" class="_card front d-flex ">
-                                                <div class="_card-image">
-                                                    <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="_card_body"></div>
-                                                <div class="_card-bottom-text">Item 1</div>
-                                            </div>
-                                            <div href="#" class="_card back d-flex">
-                                                <div class="card_title">Item 1</div>
-                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                <a href="" class="_card-link">
-                                                    Read more
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cards_container">
-                                        <div class="cards_holder">
-                                            <div href="#" class="_card front d-flex ">
-                                                <div class="_card-image">
-                                                    <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="_card_body"></div>
-                                                <div class="_card-bottom-text">Item 1</div>
-                                            </div>
-                                            <div href="#" class="_card back d-flex">
-                                                <div class="card_title">Item 1</div>
-                                                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                                <a href="" class="_card-link">
-                                                    Read more
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <section class="addtional_cards remove" id="addtional_card">
+                                    <section class="addtional_cards add" id="addtional_card">
                                         <div class="cards_container added_cards">
                                             <div class="cards_holder">
                                                 <div href="#" class="_card front d-flex ">
@@ -309,6 +156,78 @@
                                                     </a>
                                                 </div>
                                             </div>
+                                        </div> <div class="cards_container added_cards">
+                                            <div class="cards_holder">
+                                                <div href="#" class="_card front d-flex ">
+                                                    <div class="_card-image">
+                                                        <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="_card_body"></div>
+                                                    <div class="_card-bottom-text">Item 1</div>
+                                                </div>
+                                                <div href="#" class="_card back d-flex">
+                                                    <div class="card_title">Item 1</div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <a href="" class="_card-link">
+                                                        Read more
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div> <div class="cards_container added_cards">
+                                            <div class="cards_holder">
+                                                <div href="#" class="_card front d-flex ">
+                                                    <div class="_card-image">
+                                                        <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="_card_body"></div>
+                                                    <div class="_card-bottom-text">Item 1</div>
+                                                </div>
+                                                <div href="#" class="_card back d-flex">
+                                                    <div class="card_title">Item 1</div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <a href="" class="_card-link">
+                                                        Read more
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div> <div class="cards_container added_cards">
+                                            <div class="cards_holder">
+                                                <div href="#" class="_card front d-flex ">
+                                                    <div class="_card-image">
+                                                        <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="_card_body"></div>
+                                                    <div class="_card-bottom-text">Item 1</div>
+                                                </div>
+                                                <div href="#" class="_card back d-flex">
+                                                    <div class="card_title">Item 1</div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <a href="" class="_card-link">
+                                                        Read more
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div> <div class="cards_container added_cards">
+                                            <div class="cards_holder">
+                                                <div href="#" class="_card front d-flex ">
+                                                    <div class="_card-image">
+                                                        <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="_card_body"></div>
+                                                    <div class="_card-bottom-text">Ktem 1</div>
+                                                </div>
+                                                <div href="#" class="_card back d-flex">
+                                                    <div class="card_title">Item 1</div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <a href="" class="_card-link">
+                                                        Read more
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="cards_container added_cards">
                                             <div class="cards_holder">
@@ -317,7 +236,26 @@
                                                         <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
                                                     </div>
                                                     <div class="_card_body"></div>
-                                                    <div class="_card-bottom-text">Item 1</div>
+                                                    <div class="_card-bottom-text">Itek 1</div>
+                                                </div>
+                                                <div href="#" class="_card back d-flex">
+                                                    <div class="card_title">Item 1</div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <a href="" class="_card-link">
+                                                        Read more
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cards_container added_cards">
+                                            <div class="cards_holder">
+                                                <div href="#" class="_card front d-flex ">
+                                                    <div class="_card-image">
+                                                        <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="_card_body"></div>
+                                                    <div class="_card-bottom-text">Ite 1</div>
                                                 </div>
                                                 <div href="#" class="_card back d-flex">
                                                     <div class="card_title">Item 1</div>
@@ -355,7 +293,62 @@
                                                         <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
                                                     </div>
                                                     <div class="_card_body"></div>
-                                                    <div class="_card-bottom-text">Item 1</div>
+                                                    <div class="_card-bottom-text">Ktem B</div>
+                                                </div>
+                                                <div href="#" class="_card back d-flex">
+                                                    <div class="card_title">Item 1</div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <a href="" class="_card-link">
+                                                        Read more
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div> <div class="cards_container added_cards">
+                                            <div class="cards_holder">
+                                                <div href="#" class="_card front d-flex ">
+                                                    <div class="_card-image">
+                                                        <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="_card_body"></div>
+                                                    <div class="_card-bottom-text">Ktem B</div>
+                                                </div>
+                                                <div href="#" class="_card back d-flex">
+                                                    <div class="card_title">Item 1</div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <a href="" class="_card-link">
+                                                        Read more
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div> <div class="cards_container added_cards">
+                                            <div class="cards_holder">
+                                                <div href="#" class="_card front d-flex ">
+                                                    <div class="_card-image">
+                                                        <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="_card_body"></div>
+                                                    <div class="_card-bottom-text">Ktem B</div>
+                                                </div>
+                                                <div href="#" class="_card back d-flex">
+                                                    <div class="card_title">Item 1</div>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <a href="" class="_card-link">
+                                                        Read more
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cards_container added_cards">
+                                            <div class="cards_holder">
+                                                <div href="#" class="_card front d-flex ">
+                                                    <div class="_card-image">
+                                                        <img src="image/line-charts-line-chart.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="_card_body"></div>
+                                                    <div class="_card-bottom-text">Ktem B</div>
                                                 </div>
                                                 <div href="#" class="_card back d-flex">
                                                     <div class="card_title">Item 1</div>
@@ -406,29 +399,11 @@
                                             </div>
                                         </div>
                                     </section>
-                                    <section class="more">
-                                        <div class="changeHeight-btn">
-                                            <div class="button">
-                                                <button id="Show_more" class="Show_more">
-                                                    Show  (
-                                                    <span id="_cardscount">4</span>
-                                                    ) more
-                                                    <i class="fa-solid fa-arrow-down"></i>
-                                                </button>
-                                                <button id="Show_less" class="Show_less">
-                                                    Show Less
-                                                    <i class="fa-solid fa-arrow-up"></i>
-                                                </button>
-                                            </div>
-                                            <div class="advertize  ">
-                                                <img src="image/Frame 21.png" alt="" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </section>
+                                  
                                 </div>
                             </div>
                         </section>
-                        <!-- <section class="more">
+                        <section class="more">
                             <div class="changeHeight-btn">
                                 <div class="button">
                                     <button id="Show_more" class="Show_more">
@@ -446,7 +421,7 @@
                                     <img src="image/Frame 21.png" alt="">
                                 </div>
                             </div>
-                        </section> -->
+                        </section>
                     </section>
                 </div>
             </div>

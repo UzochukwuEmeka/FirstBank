@@ -270,6 +270,7 @@ body.dark {
   flex: 1;
   padding: 18px 17px;
 }
+
 .menu {
   display: none;
   transition: all 0.2s linear;
@@ -388,7 +389,7 @@ body.dark {
 
 /*  Cards*/
 .all_cards {
-  height: 120vh;
+  height: 100%;
   /* display: none; */
 }
 .add {
@@ -412,8 +413,9 @@ body.dark {
 
 .addtional_cards {
   padding-top: 40px;
-
+  height: 80vh;
   animation-name: show;
+  overflow: hidden;
   animation-duration: 4s;
 }
 @keyframes show {
@@ -523,7 +525,6 @@ body.dark {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  
 }
 
 .back {
