@@ -81,18 +81,18 @@ for (let i = 0; i < added2.length; i++) {
   console.log((number2.textContent = added2.length));
 }
 
-function search() {
-  let filter = document.getElementById("search_input").value.toUpperCase();
-  let cards = document.querySelectorAll(".cards_container");
-  let view = document.querySelectorAll("._card-bottom-text");
-  for (let i = 0; i < view.length; i++) {
-    let a = cards[i].querySelectorAll("._card-bottom-text")[0];
-    let value = a.innerHTML || a.innerText || a.textContent;
-    if (value.toUpperCase().indexOf(filter) > -1) {
-      cards[i].style.display = " ";
-    } else {
-      cards[i].style.display = "none";
-    }
-  }
-  console.log(filter);
-}
+// function search() {
+//   let filter = document.getElementById("search_input").value.toUpperCase();
+//   let cards = document.querySelectorAll(".cards_container");
+//   let view = document.querySelectorAll("._card-bottom-text");
+//   for (let i = 0; i < view.length; i++) {
+//     let a = cards[i].querySelectorAll("._card-bottom-text")[0];
+//     let value = a.innerHTML || a.innerText || a.textContent;
+//     if (value.toUpperCase().indexOf(filter) > -1) {
+//       cards[i].style.display = " ";
+//     } else {
+//       cards[i].style.display = "none";
+//     }
+//   }
+//   console.log(filter);
+// }
