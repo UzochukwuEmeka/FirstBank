@@ -123,7 +123,7 @@ font-style: var(--font);
 }
 
 .nav-links .tablinks:nth-child(1).active ~ .actives {
-  top: 0%;
+  top: -1%;
 }
 
 .nav-links .tablinks:nth-child(2).active ~ .actives {
