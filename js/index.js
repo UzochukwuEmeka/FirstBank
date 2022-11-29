@@ -75,6 +75,12 @@ for (let i = 0; i < hiddenCards.length; i++) {
 for (let i = 0; i < added.length; i++) {
   console.log(added[i].length );
   console.log((number.textContent = added.length -8));
+  if (added.length <= 8 ) {
+    document.querySelector(".button").style.display="none"
+    hiddenCards[i].style.height = "100%";
+    
+
+  }
 }
 for (let i = 0; i < added2.length; i++) {
   console.log(added2[i].length);
@@ -87,12 +93,14 @@ for (let i = 0; i < added2.length; i++) {
 //   let view = document.querySelectorAll("._card-bottom-text");
 //   for (let i = 0; i < view.length; i++) {
 //     let a = cards[i].querySelectorAll("._card-bottom-text")[0];
-//     let value = a.innerHTML || a.innerText || a.textContent;
+//     let value =  a.innerText || a.textContent;
 //     if (value.toUpperCase().indexOf(filter) > -1) {
 //       cards[i].style.display = " ";
 //     } else {
 //       cards[i].style.display = "none";
+      
 //     }
 //   }
 //   console.log(filter);
 // }
+

@@ -92,7 +92,7 @@ body.dark {
 }
 .head_text {
   color: var(--white);
-
+font-style: var(--font);
   outline: none;
 }
 
@@ -198,7 +198,6 @@ body.dark {
 .seach-bar-container {
   width: 100%;
   height: 80px;
-  background-color: red;
   display: flex;
   justify-content: flex-end;
   padding: 17px 51px;
@@ -228,7 +227,7 @@ body.dark {
   transition: all 0.2s linear;
 }
 .search_input {
-  background-color: transparent;
+  background-color: transparent !important;
   border: 0;
   outline: none;
   flex: 1;
@@ -372,7 +371,7 @@ body.dark {
   height: 80vh;
   animation-name: show;
   overflow: hidden;
-  animation-duration: 4s;
+  animation-duration: 1s;
 }
 @keyframes show {
   from {
@@ -404,7 +403,7 @@ body.dark {
   width: 196px;
   height: 192px;
   transform-style: preserve-3d;
-  transition: all 0.8s linear;
+  transition: all .5s linear;
   margin-top: 20px;
   padding: 0;
   border-radius: 15px;
@@ -460,6 +459,7 @@ body.dark {
   font-family: var(--font);
   margin-top: auto;
   padding-left: 8px;
+  padding-bottom:10px;
 }
 ._card-link {
   color: var(--white);
