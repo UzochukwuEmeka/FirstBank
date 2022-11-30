@@ -1,8 +1,6 @@
 let added = document.querySelectorAll(".added_cards");
-let added2 = document.querySelectorAll(".added2");
 
 let number = document.getElementById("_cardscount");
-let number2 = document.getElementById("_cardscount2");
 
 let tablinks = document.querySelectorAll(".tablinks");
 
@@ -19,11 +17,12 @@ checkbox.addEventListener("change", () => {
   document.getElementById("searchform").classList.toggle("dark");
   document.getElementById("searchcontainer").classList.toggle("dark");
   document.getElementById("sidenav").classList.toggle("dark");
-  document.getElementById("change").classList.toggle("dark");
   document.getElementById("Show_more").classList.toggle("dark");
   document.getElementById("Show_less").classList.toggle("dark");
-
   document.body.classList.toggle("dark");
+  tablinks.forEach((tablink) => {
+    tablink.classList.toggle("dark");
+  });
 
   let img = document.getElementById("logoimg").src;
 
@@ -57,7 +56,6 @@ for (let i = 0; i < hiddenCards.length; i++) {
   hiddenCards[i];
   console.log(hiddenCards.length);
   ShowAll.addEventListener("click", () => {
-   
     hiddenCards[i].style.height = "100%";
 
     heightChange.style.height = 100 + "%";
@@ -66,20 +64,18 @@ for (let i = 0; i < hiddenCards.length; i++) {
   });
   HideAll.addEventListener("click", () => {
     hiddenCards[i].style.height = "80vh";
-  
+
     ShowAll.style.display = "block";
     HideAll.style.display = "none";
   });
 }
 
 for (let i = 0; i < added.length; i++) {
-  console.log(added[i].length );
-  console.log((number.textContent = added.length -8));
-  if (added.length <= 8 ) {
-    document.querySelector(".button").style.display="none"
+  console.log(added[i].length);
+  console.log((number.textContent = added.length - 8));
+  if (added.length <= 8) {
+    document.querySelector(".button").style.display = "none";
     hiddenCards[i].style.height = "100%";
-    
-
   }
 }
 for (let i = 0; i < added2.length; i++) {
@@ -98,9 +94,8 @@ for (let i = 0; i < added2.length; i++) {
 //       cards[i].style.display = " ";
 //     } else {
 //       cards[i].style.display = "none";
-      
+
 //     }
 //   }
 //   console.log(filter);
 // }
-
